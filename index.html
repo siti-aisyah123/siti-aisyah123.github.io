@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background-color: #83b300;
+    }
+
+    .cv-container {
+      display: flex;
+      flex-direction: row;
+      max-width: 800px;
+      margin: 30px auto;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .left {
+      width: 35%;
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .left img {
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .left h1 {
+      margin: 10px 0 5px;
+    }
+
+    .contact, .skills, .social {
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .right {
+      width: 65%;
+      background-color: #1e3a5f;
+      color: white;
+      padding: 20px;
+    }
+
+    .right h2 {
+      margin-top: 0;
+      color: #ffcc00;
+    }
+
+    .section {
+      margin-top: 20px;
+    }
+
+    .section h2 {
+      color: #ffcc00;
+      margin-bottom: 10px;
+    }
+
+    .skills span {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .stars {
+      color: gold;
+    }
+
+    .portfolio a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    .motto h3 {
+      color: #ffcc00;
+      font-size: 22px;
+    }
+    .left h2, .right h2, .motto h3{
+      background-color: #ffcc00;
+      color: #1e3a5f;
+      padding: 8px 12px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    @media (max-width: 768px) {
+      .cv-container {
+        flex-direction: column;
+      }
+
+      .left, .right {
+        width: 100%;
+        text-align: left;
+      }
+
+      .left img {
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+    <div class="left">
+      <img src="profile.jpeg" alt="Foto profile">
+      <h1>Siti Aisyah</h1>
+      <p>Developer</p>
+
+      <div class="contact">
+        <h2>Biodata Diri</h2>
+        <p><strong>Tempat Tanggal Lahir:</strong><br>Medan,13 April 2005</p>
+        <p><strong>Alamat:</strong><br>Jln.Yph Lingk.11</p>
+        <p><strong>No.HP:</strong><br>+62 831-9086-2997</p>
+        <p><strong>Email:</strong><br>sitiaisyahapril2005@gmail.com</p>
+      </div>
+
+      <div class="skills">
+        <h2>Skill</h2>
+        <ul>
+        <li>HTML <span class="Mahir"></li>
+        <li>CSS <span class="Dasar"></li>
+        <li>JavaScript <span class="Menengah"></span>
+      </ul>
+      </div>
+
+      <div class="social">
+        <h2>Akun Media Sosial</h2>
+        <p>Instagram: @s_ashyhh</p>
+        <p>GitHub: @siti-aisyah</p>
+      </div>
+    </div>
+
+    <div class="right">
+      <h2>Profil Singkat</h2>
+      <p>Saya adalah mahasiswi jurusan Sistem Informasi yang memiliki minat besar di bidang pengembangan web. Saya memiliki keinginan kuat untuk terus belajar dan mengembangkan kemampuan di bidang teknologi, khususnya dalam HTML, CSS, dan JavaScript. Sebagai seorang developer pemula, saya terbiasa bekerja secara mandiri maupun dalam tim, serta memiliki semangat tinggi dalam menyelesaikan tantangan baru. Saya percaya bahwa konsistensi, semangat belajar, dan ketekunan adalah kunci untuk mencapai tujuan dan menjadi developer yang handal.
+      <div class="motto">
+        <h3>Motto</h3>
+        <p>Jangan cuma scrolling tiktok dong, bangun dan jadi versi terbaikmu.</p>
+      </div>
+
+      <div class="section">
+        <h2>Riwayat Pendidikan</h2>
+        <p><strong>2011 - 2017:</strong><br>SD Negeri 067264 Medan</p>
+        <p><strong>2017 - 2020:</strong><br>SMP Negeri 39 Medan</p>
+        <p><strong>2020 - 2023:</strong><br>SMA Negeri 19 Medan</p>
+        <p><strong>2023 - 2026:</strong><br>S1 Sistem Informasi Universitas Muhammadiyah Sumatera Utara</p>
+      </div>
+
+      <div class="section">
+        <h2>Pengalaman Bekerja</h2>
+        <p><strong>2024 - 2025:</strong><br>Pengalaman Akademik (membuat website toko coffe)</p>
+        <p><strong>2023 - 2024:</strong><br>organisasi GDSC (Google Developer Student Club)</p>
+      </div>
+
+      <div class="section portfolio">
+        <h2>Portfolio</h2>
+        <p><a href="https://github.com/siti-aisyah" target="_blank">GitHub: github.com/siti-aisyah</a></p>
+        <p><a href="https://myportfolio.com/siti-aisyah" target="_blank">Website Portofolio</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
